@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Signup</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="signupbox">
+		<div class="row-fluid">
+			<div class="span8">
+				<div class="jumbotron" style="height: 20%">
+					<h3 class="display-3">Create account</h3>
+					<h4><%= title %></h4>
+				</div>
+				<form action="/signed" method="post">
+					<div class="form-group" style="width: 40%;">
+						<label for="FisrtName">First Name</label> <input type="Text"
+							class="form-control" name="FirstName" placeholder="First Name">
+					</div>
+					<div class="form-group" style="width: auto;">
+						<label for="LastName">Last Name</label> <input type="Text"
+							class="form-control" name="LastName" placeholder="Last Name">
+					</div>
+					<div class="form-group" style="width: 40%;">
+						<label for="dob">Birth Day</label> <input type="date"
+							class="form-control" name="dob" placeholder="Date of Birth">
+					</div>
+					<div class="form-group" style="width: 40%;">
+						<label for="email">Email address</label> <input type="text"
+							class="form-control" name="email" placeholder="Email">
+					</div>
+					<div class="form-group" style="width: 40%;">
+						<label for="password">Password</label> <input type="password"
+							class="form-control" name="password" placeholder="Password">
+					</div>
+					<div class="form-group" style="width: 40%;">
+						<label for="Thandle">Twitter Handle(#)</label> <input type="text"
+							class="form-control" name="Thandle" placeholder="TwitterHandle">
+					</div>
+					<div class="form-group" style="width: 40%;">
+						<label for="phone">Phone Number</label> <input type="text"
+							class="form-control" name="phone" placeholder="Phone">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
